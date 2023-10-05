@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Young+Serif&display=swap');
+
+:root{
+    --cor1:#ffffff;
+    --cor2:#000000;
+    --corsombra: #0000005e;
+    --cordestaque: #FFD700;
+
+    --font-texto: 'Lato', sans-serif;
+    --font-destaque: 'Young Serif', serif;
+
+}
+
+*{
+    font-family: var(--font-texto);
+}
+
+body{
+    background: var(--cor1);
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    font-family: var(--font-destaque);
+    font-weight: bold;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    color: var(--cor1);
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+.carousel-inner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--corsombra);
+    z-index: 1;
+}
+
+.navbar-nav a{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--cor2);
+}
+
+.navbar-nav a:hover{
+    color: var(--cordestaque);
+    font-weight: bold;
+    transition: 0.5;
+
+}
+
+.navbar-light .navbar-brand{
+    color: var(--cor2);
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--font-destaque);
+    font-weight: bold;
+}
+
+.navbar-light .text-warning{
+    font-family: var(--font-destaque);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.w-100{
+    height: 100vh; 
+}
+
+.services .card-body i{
+    font-size: 50px;
+    
+}
+
+.portfolio .card{
+    box-shadow: 15px 15px 40px var(--corsombra);
+}
+
+
+.our-team .card-body i{
+    font-size: 20px;
+    }
+    
+    .our-team .card{
+        box-shadow: 15px 15px 40px var(--corsombra);
+    }
